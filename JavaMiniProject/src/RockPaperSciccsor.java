@@ -114,7 +114,7 @@ public class RockPaperSciccsor
 	    	
 	    	   
 		  
-	    	
+	    	 
 	     	 System.out.println("/////-----/////-----/////-----/////-----/////-----/////-----/////---\n"); 
 	     	 
 	         System.out.print(" The Tournament is Over and Results are:");
@@ -123,12 +123,12 @@ public class RockPaperSciccsor
 	    	 System.out.println(" \t\t\t\t         The Game was Tie: "+draw +"\n");
 	    	 
 	    	 System.out.println("-----/////-----/////-----/////-----/////-----/////-----/////-----///\n");
-	    	 
+	    	 try {
 	         	if(my_win==cop_win) 
 	    	 {
 	    		 System.out.println(" The Tournament was Draw.\n");
 	    	 }
-	         	
+	          	
 	    	    else if(my_win>cop_win) 
 	    	 {
 	    		 System.out.println(" Player win The Tournament.\n");
@@ -144,12 +144,24 @@ public class RockPaperSciccsor
 	    																							
 	    		int again =new  Scanner(System.in).nextInt();						            	 // you can you sting here (if comfortable)
 	    			
-	    		if(again==0)
-	    		{
-	    			System.out.println();
-	    			break;
-	    		}
-	     	
+	    		
+	    		
+	    		 
+		    	
+		    	
+	    		       if( !(again==1 ))
+		    		 { 
+		    		 	System.out.println();
+		    		 	break;
+		    		 }
+		    		  
+	    		   
+	             
+		    	     }catch(Exception e)
+		    	        {
+		    	    	 System.out.println("Error unwanted input");
+		           			System.out.println(e); 	    	 
+		    	        }
 	    		
 	     }
 	   
